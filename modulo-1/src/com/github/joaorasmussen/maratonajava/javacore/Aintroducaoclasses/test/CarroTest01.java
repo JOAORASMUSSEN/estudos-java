@@ -6,6 +6,7 @@ public class CarroTest01 {
     public static void main(String[] args) {
         Carro carro1 = new Carro();
         Carro carro2 = new Carro();
+        //carro1 e carro2 var de referência
 
         carro1.marca  = "Volkswagen";
         carro1.modelo  = "Gol";
