@@ -44,4 +44,4 @@ O projeto está organizado em pacotes com os seguintes tópicos:
 
 ---
 
-👨‍💻 Desenvolvido por João Vitor Rasmussen Rezende Barbosa
+👨‍💻 Desenvolvido por João Vitor Rasmussen
