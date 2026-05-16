@@ -5,9 +5,10 @@ public class Estudante {
     public int idade;
     public char genero;
 
-    public void imprime(Estudante estudante){
-        System.out.println(estudante.nome);
-        System.out.println(estudante.idade);
-        System.out.println(estudante.genero);
+    public void imprime(){
+        //this: referência que aponta pro objeto atual
+        System.out.println(this.nome);
+        System.out.println(this.idade);
+        System.out.println(this.genero);
     }
 }

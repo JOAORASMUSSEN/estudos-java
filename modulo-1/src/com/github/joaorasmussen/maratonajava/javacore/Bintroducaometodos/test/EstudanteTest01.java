@@ -3,7 +3,7 @@ package com.github.joaorasmussen.maratonajava.javacore.Bintroducaometodos.test;
 import com.github.joaorasmussen.maratonajava.javacore.Bintroducaometodos.dominio.Estudante;
 import com.github.joaorasmussen.maratonajava.javacore.Bintroducaometodos.dominio.Impressora;
 
-public class EstudanteTest {
+public class EstudanteTest01 {
     public static void main(String[] args) {
         Estudante estudante01 = new Estudante();
         Estudante estudante02 = new Estudante();
