@@ -1,9 +1,10 @@
 package com.github.joaorasmussen.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double [] salarios;
+    private String nome;
+    private int idade;
+    private double [] salarios;
+    private  double media = 0;
 
     public void imprimeDados(){
         System.out.println(this.nome);
@@ -26,8 +27,36 @@ public class Funcionario {
         for(double salario: this.salarios){
             soma +=salario;
         }
-        double media = soma/salarios.length;
+        media = soma/salarios.length;
 
         System.out.printf("A média salarial é: %.2f", media);
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public double getMedia() {
+        return media;
     }
 }
