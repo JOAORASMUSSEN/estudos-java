@@ -12,7 +12,7 @@ public class CarroTest01 {
         c2.imprime();
         c3.imprime();
 
-        Carro.velocidadeLimite = 180;
+        Carro.setVelocidadeLimite(180);
         //só precisa mudar uma vez por ser static
 
         c1.imprime();

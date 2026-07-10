@@ -3,7 +3,7 @@ package com.github.joaorasmussen.maratonajava.javacore.Fmodificadorestatico.doma
 public class Carro {
     private String marca;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
     //não pertence mais ao objeto, pertence a classe
 
     public Carro(String marca, double velocidadeMaxima){
@@ -16,6 +16,14 @@ public class Carro {
         System.out.println("Nome "+this.marca);
         System.out.println("Velocidade Máxima "+this.velocidadeMaxima);
         System.out.println("Velocidade Limite "+ Carro.velocidadeLimite);
+    }
+
+    public static void setVelocidadeLimite(double velocidadeLimite){
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite(){
+        return Carro.velocidadeLimite;
     }
 
     public String getNome() {
