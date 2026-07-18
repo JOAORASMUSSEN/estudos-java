@@ -1,15 +1,11 @@
 package com.github.joaorasmussen.maratonajava.javacore.Gassociacao.dominio;
 
-public class Jogador {
+public class Time {
     private String nome;
     private Time time;
 
-    public void imprime(){
-        System.out.println(this.nome);
-        if(time != null){
-            System.out.println(time.getNome());
-        }
-        //sem o condicional pode ter um nullpointer
+    public Time(String nome) {
+        this.nome = nome;
     }
 
     public Time getTime() {
@@ -18,10 +14,6 @@ public class Jogador {
 
     public void setTime(Time time) {
         this.time = time;
-    }
-
-    public Jogador(String nome){
-        this.nome = nome;
     }
 
     public String getNome() {
